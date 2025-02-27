@@ -1,0 +1,36 @@
+<div class="title-container">
+  <h1>Grupo 4 - Lab 2</h1>
+  <h2>Datos del Sensor de Humedad</h2>
+  <h3>Materia: Tecnologías Emergentes</h3>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Hardware</th>
+      <th>Temperatura</th>
+      <th>Humedad</th>
+      <th>Contaminación</th>
+      <th>Conectado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let sensor of sensorData">
+      <td>{{ sensor.id }}</td>
+      <td>{{ sensor.name }}</td>
+      <td>{{ sensor.hardware }}</td>
+      <td>{{ sensor.variables?.Temperatura }} °C</td>
+      <td>{{ sensor.variables?.Humedad }} %</td>
+      <td>{{ sensor.variables?.Contaminacion }}</td>
+      <td>{{ sensor.connected ? 'Sí' : 'No' }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="pagination-container">
+  <button (click)="prevPage()" [disabled]="page === 0">⬅ Anterior</button>
+  <span>Página {{ page + 1 }} de {{ totalPages }}</span>
+  <button (click)="nextPage()" [disabled]="page >= totalPages - 1">Siguiente ➡</button>
+</div>

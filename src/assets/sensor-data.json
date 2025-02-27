@@ -1,0 +1,14 @@
+[
+    {
+      "variables": {
+        "Temperatura": 24.8,
+        "Humedad": 68.2,
+        "Contaminacion": 1
+      },
+      "id": "1",
+      "name": "sensor_wemos",
+      "hardware": "esp8266",
+      "connected": true
+    }
+  ]
+  

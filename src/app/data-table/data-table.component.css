@@ -1,0 +1,93 @@
+/* Estilos generales para la tabla */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+/* Estilos para el encabezado */
+thead {
+  background-color: #1976d2;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilos alternos en las filas */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e3f2fd;
+}
+
+/* Estilos para los botones de paginación */
+.pagination-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination-container button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination-container button:hover {
+  background-color: #125a9b;
+}
+
+.pagination-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-container span {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+/* Contenedor del título */
+.title-container {
+  text-align: center;
+  margin: 20px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para el título */
+.title-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1976d2;
+  margin-bottom: 5px;
+}
+
+.title-container h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.title-container h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 15px;
+}
