@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SensorService } from '../sensor.service';
+import { SensorChartComponent } from '../sensor-chart/sensor-chart.component';
 
 @Component({
   selector: 'app-data-table',
@@ -9,7 +10,7 @@ import { SensorService } from '../sensor.service';
 export class DataTableComponent implements OnInit {
   sensorData: any[] = [];
   page: number = 0;
-  totalPages: number = 1; 
+  totalPages: number = 1;
 
   constructor(private sensorService: SensorService) {}
 

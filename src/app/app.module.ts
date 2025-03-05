@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http'; // Importar HttpClientM
 import { AppComponent } from './app.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { RouterModule, Routes } from '@angular/router';
+import { SensorChartComponent } from './sensor-chart/sensor-chart.component';
 
 // Definición de rutas
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    DataTableComponent
+    DataTableComponent,
+    SensorChartComponent
   ],
   imports: [
     BrowserModule,
